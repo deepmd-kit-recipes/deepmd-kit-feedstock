@@ -8,3 +8,7 @@ channel_sources:
 - deepmodeling,defaults
 channel_targets:
 - deepmodeling main
+c_compiler_version:
+- 4  # [osx]
+cxx_compiler_version:
+- 4  # [osx]
