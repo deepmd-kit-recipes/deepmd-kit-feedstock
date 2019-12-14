@@ -1,17 +1,24 @@
 c_compiler:
-- vs2008
+- vs2015
 channel_sources:
 - deepmodeling,defaults
 channel_targets:
 - deepmodeling main
 cxx_compiler:
-- vs2008
+- vs2015
 dp_variant:
-- gpu
+- cpu
 float_prec:
-- high
+- low
 numpy:
 - '1.14'
+pin_run_as_build:
+  python:
+    min_pin: x.x
+    max_pin: x.x
+python:
+- '3.7'
 zip_keys:
-- - c_compiler
+- - python
+  - c_compiler
   - cxx_compiler

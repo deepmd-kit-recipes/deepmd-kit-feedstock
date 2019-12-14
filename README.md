@@ -29,115 +29,143 @@ Current build status
         <table>
           <thead><tr><th>Variant</th><th>Status</th></tr></thead>
           <tbody><tr>
-              <td>linux_dp_variantcpufloat_prechigh</td>
+              <td>linux_dp_variantcpufloat_prechighpython3.6</td>
               <td>
                 <a href="https://dev.azure.com/deepmd-kit-recipes/feedstock-builds/_build/latest?definitionId=1&branchName=master">
-                  <img src="https://dev.azure.com/deepmd-kit-recipes/feedstock-builds/_apis/build/status/deepmd-kit-feedstock?branchName=master&jobName=linux&configuration=linux_dp_variantcpufloat_prechigh" alt="variant">
+                  <img src="https://dev.azure.com/deepmd-kit-recipes/feedstock-builds/_apis/build/status/deepmd-kit-feedstock?branchName=master&jobName=linux&configuration=linux_dp_variantcpufloat_prechighpython3.6" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_dp_variantcpufloat_preclow</td>
+              <td>linux_dp_variantcpufloat_prechighpython3.7</td>
               <td>
                 <a href="https://dev.azure.com/deepmd-kit-recipes/feedstock-builds/_build/latest?definitionId=1&branchName=master">
-                  <img src="https://dev.azure.com/deepmd-kit-recipes/feedstock-builds/_apis/build/status/deepmd-kit-feedstock?branchName=master&jobName=linux&configuration=linux_dp_variantcpufloat_preclow" alt="variant">
+                  <img src="https://dev.azure.com/deepmd-kit-recipes/feedstock-builds/_apis/build/status/deepmd-kit-feedstock?branchName=master&jobName=linux&configuration=linux_dp_variantcpufloat_prechighpython3.7" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_dp_variantgpufloat_prechigh</td>
+              <td>linux_dp_variantcpufloat_preclowpython3.6</td>
               <td>
                 <a href="https://dev.azure.com/deepmd-kit-recipes/feedstock-builds/_build/latest?definitionId=1&branchName=master">
-                  <img src="https://dev.azure.com/deepmd-kit-recipes/feedstock-builds/_apis/build/status/deepmd-kit-feedstock?branchName=master&jobName=linux&configuration=linux_dp_variantgpufloat_prechigh" alt="variant">
+                  <img src="https://dev.azure.com/deepmd-kit-recipes/feedstock-builds/_apis/build/status/deepmd-kit-feedstock?branchName=master&jobName=linux&configuration=linux_dp_variantcpufloat_preclowpython3.6" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_dp_variantgpufloat_preclow</td>
+              <td>linux_dp_variantcpufloat_preclowpython3.7</td>
               <td>
                 <a href="https://dev.azure.com/deepmd-kit-recipes/feedstock-builds/_build/latest?definitionId=1&branchName=master">
-                  <img src="https://dev.azure.com/deepmd-kit-recipes/feedstock-builds/_apis/build/status/deepmd-kit-feedstock?branchName=master&jobName=linux&configuration=linux_dp_variantgpufloat_preclow" alt="variant">
+                  <img src="https://dev.azure.com/deepmd-kit-recipes/feedstock-builds/_apis/build/status/deepmd-kit-feedstock?branchName=master&jobName=linux&configuration=linux_dp_variantcpufloat_preclowpython3.7" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_dp_variantcpufloat_prechigh</td>
+              <td>linux_dp_variantgpufloat_prechighpython3.6</td>
               <td>
                 <a href="https://dev.azure.com/deepmd-kit-recipes/feedstock-builds/_build/latest?definitionId=1&branchName=master">
-                  <img src="https://dev.azure.com/deepmd-kit-recipes/feedstock-builds/_apis/build/status/deepmd-kit-feedstock?branchName=master&jobName=osx&configuration=osx_dp_variantcpufloat_prechigh" alt="variant">
+                  <img src="https://dev.azure.com/deepmd-kit-recipes/feedstock-builds/_apis/build/status/deepmd-kit-feedstock?branchName=master&jobName=linux&configuration=linux_dp_variantgpufloat_prechighpython3.6" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_dp_variantcpufloat_preclow</td>
+              <td>linux_dp_variantgpufloat_prechighpython3.7</td>
               <td>
                 <a href="https://dev.azure.com/deepmd-kit-recipes/feedstock-builds/_build/latest?definitionId=1&branchName=master">
-                  <img src="https://dev.azure.com/deepmd-kit-recipes/feedstock-builds/_apis/build/status/deepmd-kit-feedstock?branchName=master&jobName=osx&configuration=osx_dp_variantcpufloat_preclow" alt="variant">
+                  <img src="https://dev.azure.com/deepmd-kit-recipes/feedstock-builds/_apis/build/status/deepmd-kit-feedstock?branchName=master&jobName=linux&configuration=linux_dp_variantgpufloat_prechighpython3.7" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_dp_variantgpufloat_prechigh</td>
+              <td>linux_dp_variantgpufloat_preclowpython3.6</td>
               <td>
                 <a href="https://dev.azure.com/deepmd-kit-recipes/feedstock-builds/_build/latest?definitionId=1&branchName=master">
-                  <img src="https://dev.azure.com/deepmd-kit-recipes/feedstock-builds/_apis/build/status/deepmd-kit-feedstock?branchName=master&jobName=osx&configuration=osx_dp_variantgpufloat_prechigh" alt="variant">
+                  <img src="https://dev.azure.com/deepmd-kit-recipes/feedstock-builds/_apis/build/status/deepmd-kit-feedstock?branchName=master&jobName=linux&configuration=linux_dp_variantgpufloat_preclowpython3.6" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_dp_variantgpufloat_preclow</td>
+              <td>linux_dp_variantgpufloat_preclowpython3.7</td>
               <td>
                 <a href="https://dev.azure.com/deepmd-kit-recipes/feedstock-builds/_build/latest?definitionId=1&branchName=master">
-                  <img src="https://dev.azure.com/deepmd-kit-recipes/feedstock-builds/_apis/build/status/deepmd-kit-feedstock?branchName=master&jobName=osx&configuration=osx_dp_variantgpufloat_preclow" alt="variant">
+                  <img src="https://dev.azure.com/deepmd-kit-recipes/feedstock-builds/_apis/build/status/deepmd-kit-feedstock?branchName=master&jobName=linux&configuration=linux_dp_variantgpufloat_preclowpython3.7" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>win_c_compilervs2008cxx_compilervs2008dp_variantcpufloat_prechigh</td>
+              <td>osx_dp_variantcpufloat_prechighpython3.6</td>
               <td>
                 <a href="https://dev.azure.com/deepmd-kit-recipes/feedstock-builds/_build/latest?definitionId=1&branchName=master">
-                  <img src="https://dev.azure.com/deepmd-kit-recipes/feedstock-builds/_apis/build/status/deepmd-kit-feedstock?branchName=master&jobName=win&configuration=win_c_compilervs2008cxx_compilervs2008dp_variantcpufloat_prechigh" alt="variant">
+                  <img src="https://dev.azure.com/deepmd-kit-recipes/feedstock-builds/_apis/build/status/deepmd-kit-feedstock?branchName=master&jobName=osx&configuration=osx_dp_variantcpufloat_prechighpython3.6" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>win_c_compilervs2008cxx_compilervs2008dp_variantcpufloat_preclow</td>
+              <td>osx_dp_variantcpufloat_prechighpython3.7</td>
               <td>
                 <a href="https://dev.azure.com/deepmd-kit-recipes/feedstock-builds/_build/latest?definitionId=1&branchName=master">
-                  <img src="https://dev.azure.com/deepmd-kit-recipes/feedstock-builds/_apis/build/status/deepmd-kit-feedstock?branchName=master&jobName=win&configuration=win_c_compilervs2008cxx_compilervs2008dp_variantcpufloat_preclow" alt="variant">
+                  <img src="https://dev.azure.com/deepmd-kit-recipes/feedstock-builds/_apis/build/status/deepmd-kit-feedstock?branchName=master&jobName=osx&configuration=osx_dp_variantcpufloat_prechighpython3.7" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>win_c_compilervs2008cxx_compilervs2008dp_variantgpufloat_prechigh</td>
+              <td>osx_dp_variantcpufloat_preclowpython3.6</td>
               <td>
                 <a href="https://dev.azure.com/deepmd-kit-recipes/feedstock-builds/_build/latest?definitionId=1&branchName=master">
-                  <img src="https://dev.azure.com/deepmd-kit-recipes/feedstock-builds/_apis/build/status/deepmd-kit-feedstock?branchName=master&jobName=win&configuration=win_c_compilervs2008cxx_compilervs2008dp_variantgpufloat_prechigh" alt="variant">
+                  <img src="https://dev.azure.com/deepmd-kit-recipes/feedstock-builds/_apis/build/status/deepmd-kit-feedstock?branchName=master&jobName=osx&configuration=osx_dp_variantcpufloat_preclowpython3.6" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>win_c_compilervs2008cxx_compilervs2008dp_variantgpufloat_preclow</td>
+              <td>osx_dp_variantcpufloat_preclowpython3.7</td>
               <td>
                 <a href="https://dev.azure.com/deepmd-kit-recipes/feedstock-builds/_build/latest?definitionId=1&branchName=master">
-                  <img src="https://dev.azure.com/deepmd-kit-recipes/feedstock-builds/_apis/build/status/deepmd-kit-feedstock?branchName=master&jobName=win&configuration=win_c_compilervs2008cxx_compilervs2008dp_variantgpufloat_preclow" alt="variant">
+                  <img src="https://dev.azure.com/deepmd-kit-recipes/feedstock-builds/_apis/build/status/deepmd-kit-feedstock?branchName=master&jobName=osx&configuration=osx_dp_variantcpufloat_preclowpython3.7" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>win_c_compilervs2015cxx_compilervs2015dp_variantcpufloat_prechigh</td>
+              <td>win_c_compilervs2015cxx_compilervs2015dp_variantcpufloat_prechighpython3.6</td>
               <td>
                 <a href="https://dev.azure.com/deepmd-kit-recipes/feedstock-builds/_build/latest?definitionId=1&branchName=master">
-                  <img src="https://dev.azure.com/deepmd-kit-recipes/feedstock-builds/_apis/build/status/deepmd-kit-feedstock?branchName=master&jobName=win&configuration=win_c_compilervs2015cxx_compilervs2015dp_variantcpufloat_prechigh" alt="variant">
+                  <img src="https://dev.azure.com/deepmd-kit-recipes/feedstock-builds/_apis/build/status/deepmd-kit-feedstock?branchName=master&jobName=win&configuration=win_c_compilervs2015cxx_compilervs2015dp_variantcpufloat_prechighpython3.6" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>win_c_compilervs2015cxx_compilervs2015dp_variantcpufloat_preclow</td>
+              <td>win_c_compilervs2015cxx_compilervs2015dp_variantcpufloat_prechighpython3.7</td>
               <td>
                 <a href="https://dev.azure.com/deepmd-kit-recipes/feedstock-builds/_build/latest?definitionId=1&branchName=master">
-                  <img src="https://dev.azure.com/deepmd-kit-recipes/feedstock-builds/_apis/build/status/deepmd-kit-feedstock?branchName=master&jobName=win&configuration=win_c_compilervs2015cxx_compilervs2015dp_variantcpufloat_preclow" alt="variant">
+                  <img src="https://dev.azure.com/deepmd-kit-recipes/feedstock-builds/_apis/build/status/deepmd-kit-feedstock?branchName=master&jobName=win&configuration=win_c_compilervs2015cxx_compilervs2015dp_variantcpufloat_prechighpython3.7" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>win_c_compilervs2015cxx_compilervs2015dp_variantgpufloat_prechigh</td>
+              <td>win_c_compilervs2015cxx_compilervs2015dp_variantcpufloat_preclowpython3.6</td>
               <td>
                 <a href="https://dev.azure.com/deepmd-kit-recipes/feedstock-builds/_build/latest?definitionId=1&branchName=master">
-                  <img src="https://dev.azure.com/deepmd-kit-recipes/feedstock-builds/_apis/build/status/deepmd-kit-feedstock?branchName=master&jobName=win&configuration=win_c_compilervs2015cxx_compilervs2015dp_variantgpufloat_prechigh" alt="variant">
+                  <img src="https://dev.azure.com/deepmd-kit-recipes/feedstock-builds/_apis/build/status/deepmd-kit-feedstock?branchName=master&jobName=win&configuration=win_c_compilervs2015cxx_compilervs2015dp_variantcpufloat_preclowpython3.6" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>win_c_compilervs2015cxx_compilervs2015dp_variantgpufloat_preclow</td>
+              <td>win_c_compilervs2015cxx_compilervs2015dp_variantcpufloat_preclowpython3.7</td>
               <td>
                 <a href="https://dev.azure.com/deepmd-kit-recipes/feedstock-builds/_build/latest?definitionId=1&branchName=master">
-                  <img src="https://dev.azure.com/deepmd-kit-recipes/feedstock-builds/_apis/build/status/deepmd-kit-feedstock?branchName=master&jobName=win&configuration=win_c_compilervs2015cxx_compilervs2015dp_variantgpufloat_preclow" alt="variant">
+                  <img src="https://dev.azure.com/deepmd-kit-recipes/feedstock-builds/_apis/build/status/deepmd-kit-feedstock?branchName=master&jobName=win&configuration=win_c_compilervs2015cxx_compilervs2015dp_variantcpufloat_preclowpython3.7" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>win_c_compilervs2015cxx_compilervs2015dp_variantgpufloat_prechighpython3.6</td>
+              <td>
+                <a href="https://dev.azure.com/deepmd-kit-recipes/feedstock-builds/_build/latest?definitionId=1&branchName=master">
+                  <img src="https://dev.azure.com/deepmd-kit-recipes/feedstock-builds/_apis/build/status/deepmd-kit-feedstock?branchName=master&jobName=win&configuration=win_c_compilervs2015cxx_compilervs2015dp_variantgpufloat_prechighpython3.6" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>win_c_compilervs2015cxx_compilervs2015dp_variantgpufloat_prechighpython3.7</td>
+              <td>
+                <a href="https://dev.azure.com/deepmd-kit-recipes/feedstock-builds/_build/latest?definitionId=1&branchName=master">
+                  <img src="https://dev.azure.com/deepmd-kit-recipes/feedstock-builds/_apis/build/status/deepmd-kit-feedstock?branchName=master&jobName=win&configuration=win_c_compilervs2015cxx_compilervs2015dp_variantgpufloat_prechighpython3.7" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>win_c_compilervs2015cxx_compilervs2015dp_variantgpufloat_preclowpython3.6</td>
+              <td>
+                <a href="https://dev.azure.com/deepmd-kit-recipes/feedstock-builds/_build/latest?definitionId=1&branchName=master">
+                  <img src="https://dev.azure.com/deepmd-kit-recipes/feedstock-builds/_apis/build/status/deepmd-kit-feedstock?branchName=master&jobName=win&configuration=win_c_compilervs2015cxx_compilervs2015dp_variantgpufloat_preclowpython3.6" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>win_c_compilervs2015cxx_compilervs2015dp_variantgpufloat_preclowpython3.7</td>
+              <td>
+                <a href="https://dev.azure.com/deepmd-kit-recipes/feedstock-builds/_build/latest?definitionId=1&branchName=master">
+                  <img src="https://dev.azure.com/deepmd-kit-recipes/feedstock-builds/_apis/build/status/deepmd-kit-feedstock?branchName=master&jobName=win&configuration=win_c_compilervs2015cxx_compilervs2015dp_variantgpufloat_preclowpython3.7" alt="variant">
                 </a>
               </td>
             </tr>

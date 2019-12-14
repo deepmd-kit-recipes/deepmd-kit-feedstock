@@ -10,17 +10,17 @@ jobs:
   strategy:
     maxParallel: 8
     matrix:
-      osx_dp_variantcpufloat_prechigh:
-        CONFIG: osx_dp_variantcpufloat_prechigh
+      osx_dp_variantcpufloat_prechighpython3.6:
+        CONFIG: osx_dp_variantcpufloat_prechighpython3.6
         UPLOAD_PACKAGES: True
-      osx_dp_variantcpufloat_preclow:
-        CONFIG: osx_dp_variantcpufloat_preclow
+      osx_dp_variantcpufloat_prechighpython3.7:
+        CONFIG: osx_dp_variantcpufloat_prechighpython3.7
         UPLOAD_PACKAGES: True
-      osx_dp_variantgpufloat_prechigh:
-        CONFIG: osx_dp_variantgpufloat_prechigh
+      osx_dp_variantcpufloat_preclowpython3.6:
+        CONFIG: osx_dp_variantcpufloat_preclowpython3.6
         UPLOAD_PACKAGES: True
-      osx_dp_variantgpufloat_preclow:
-        CONFIG: osx_dp_variantgpufloat_preclow
+      osx_dp_variantcpufloat_preclowpython3.7:
+        CONFIG: osx_dp_variantcpufloat_preclowpython3.7
         UPLOAD_PACKAGES: True
 
   steps:
