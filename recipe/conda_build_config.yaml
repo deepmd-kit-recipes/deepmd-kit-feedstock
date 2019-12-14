@@ -13,8 +13,5 @@ c_compiler_version:
 cxx_compiler_version:
 - 4  # [osx]
 cudatoolkit:
-- 9.0
-- 9.2
 - 10.0
-- 10.1
 

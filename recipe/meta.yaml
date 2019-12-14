@@ -17,7 +17,7 @@ source:
 build:
   number: 1
   string: "py{{ py }}_{{ PKG_BUILDNUM }}_{{ dp_variant }}"  # [float_prec == 'high']
-  string: "py{{ py }}_cuda{{ cudatoolkit | replace('.', '') }}_{{ PKG_BUILDNUM }}_{{ dp_variant }}_{{float_prec}}"  # [float_prec != 'high']
+  string: "py{{ py }}_{{ PKG_BUILDNUM }}_{{ dp_variant }}_{{float_prec}}"  # [float_prec != 'high']
   script:
     - "SETUPTOOLS_SCM_PRETEND_VERSION={{ version }} {{ PYTHON }} -m pip install . --no-deps -vv"  # [unix]
     - "set SETUPTOOLS_SCM_PRETEND_VERSION=%PKG_VERSION%"  # [win]
@@ -41,7 +41,7 @@ requirements:
     - setuptools_scm
     - tensorflow  # [dp_variant != 'gpu']
     - tensorflow-gpu  # [dp_variant == 'gpu']
-    - cudatoolkit  # [dp_variant == 'gpu']
+    - cudatoolkit {{ cudatoolkit }}*  # [dp_variant == 'gpu']
     - setuptools_scm
     - scikit-build
     - m2r
