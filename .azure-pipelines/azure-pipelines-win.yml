@@ -10,36 +10,132 @@ jobs:
   strategy:
     maxParallel: 4
     matrix:
-      win_c_compilervs2015cxx_compilervs2015dp_variantcpufloat_prechighpython3.6:
-        CONFIG: win_c_compilervs2015cxx_compilervs2015dp_variantcpufloat_prechighpython3.6
+      win_c_compilervs2015cudatoolkit10.0cxx_compilervs2015dp_variantcpufloat_prechighpython3.6:
+        CONFIG: win_c_compilervs2015cudatoolkit10.0cxx_compilervs2015dp_variantcpufloat_prechighpython3.6
         CONDA_BLD_PATH: D:\\bld\\
         UPLOAD_PACKAGES: True
-      win_c_compilervs2015cxx_compilervs2015dp_variantcpufloat_prechighpython3.7:
-        CONFIG: win_c_compilervs2015cxx_compilervs2015dp_variantcpufloat_prechighpython3.7
+      win_c_compilervs2015cudatoolkit10.0cxx_compilervs2015dp_variantcpufloat_prechighpython3.7:
+        CONFIG: win_c_compilervs2015cudatoolkit10.0cxx_compilervs2015dp_variantcpufloat_prechighpython3.7
         CONDA_BLD_PATH: D:\\bld\\
         UPLOAD_PACKAGES: True
-      win_c_compilervs2015cxx_compilervs2015dp_variantcpufloat_preclowpython3.6:
-        CONFIG: win_c_compilervs2015cxx_compilervs2015dp_variantcpufloat_preclowpython3.6
+      win_c_compilervs2015cudatoolkit10.0cxx_compilervs2015dp_variantcpufloat_preclowpython3.6:
+        CONFIG: win_c_compilervs2015cudatoolkit10.0cxx_compilervs2015dp_variantcpufloat_preclowpython3.6
         CONDA_BLD_PATH: D:\\bld\\
         UPLOAD_PACKAGES: True
-      win_c_compilervs2015cxx_compilervs2015dp_variantcpufloat_preclowpython3.7:
-        CONFIG: win_c_compilervs2015cxx_compilervs2015dp_variantcpufloat_preclowpython3.7
+      win_c_compilervs2015cudatoolkit10.0cxx_compilervs2015dp_variantcpufloat_preclowpython3.7:
+        CONFIG: win_c_compilervs2015cudatoolkit10.0cxx_compilervs2015dp_variantcpufloat_preclowpython3.7
         CONDA_BLD_PATH: D:\\bld\\
         UPLOAD_PACKAGES: True
-      win_c_compilervs2015cxx_compilervs2015dp_variantgpufloat_prechighpython3.6:
-        CONFIG: win_c_compilervs2015cxx_compilervs2015dp_variantgpufloat_prechighpython3.6
+      win_c_compilervs2015cudatoolkit10.0cxx_compilervs2015dp_variantgpufloat_prechighpython3.6:
+        CONFIG: win_c_compilervs2015cudatoolkit10.0cxx_compilervs2015dp_variantgpufloat_prechighpython3.6
         CONDA_BLD_PATH: D:\\bld\\
         UPLOAD_PACKAGES: True
-      win_c_compilervs2015cxx_compilervs2015dp_variantgpufloat_prechighpython3.7:
-        CONFIG: win_c_compilervs2015cxx_compilervs2015dp_variantgpufloat_prechighpython3.7
+      win_c_compilervs2015cudatoolkit10.0cxx_compilervs2015dp_variantgpufloat_prechighpython3.7:
+        CONFIG: win_c_compilervs2015cudatoolkit10.0cxx_compilervs2015dp_variantgpufloat_prechighpython3.7
         CONDA_BLD_PATH: D:\\bld\\
         UPLOAD_PACKAGES: True
-      win_c_compilervs2015cxx_compilervs2015dp_variantgpufloat_preclowpython3.6:
-        CONFIG: win_c_compilervs2015cxx_compilervs2015dp_variantgpufloat_preclowpython3.6
+      win_c_compilervs2015cudatoolkit10.0cxx_compilervs2015dp_variantgpufloat_preclowpython3.6:
+        CONFIG: win_c_compilervs2015cudatoolkit10.0cxx_compilervs2015dp_variantgpufloat_preclowpython3.6
         CONDA_BLD_PATH: D:\\bld\\
         UPLOAD_PACKAGES: True
-      win_c_compilervs2015cxx_compilervs2015dp_variantgpufloat_preclowpython3.7:
-        CONFIG: win_c_compilervs2015cxx_compilervs2015dp_variantgpufloat_preclowpython3.7
+      win_c_compilervs2015cudatoolkit10.0cxx_compilervs2015dp_variantgpufloat_preclowpython3.7:
+        CONFIG: win_c_compilervs2015cudatoolkit10.0cxx_compilervs2015dp_variantgpufloat_preclowpython3.7
+        CONDA_BLD_PATH: D:\\bld\\
+        UPLOAD_PACKAGES: True
+      win_c_compilervs2015cudatoolkit10.1cxx_compilervs2015dp_variantcpufloat_prechighpython3.6:
+        CONFIG: win_c_compilervs2015cudatoolkit10.1cxx_compilervs2015dp_variantcpufloat_prechighpython3.6
+        CONDA_BLD_PATH: D:\\bld\\
+        UPLOAD_PACKAGES: True
+      win_c_compilervs2015cudatoolkit10.1cxx_compilervs2015dp_variantcpufloat_prechighpython3.7:
+        CONFIG: win_c_compilervs2015cudatoolkit10.1cxx_compilervs2015dp_variantcpufloat_prechighpython3.7
+        CONDA_BLD_PATH: D:\\bld\\
+        UPLOAD_PACKAGES: True
+      win_c_compilervs2015cudatoolkit10.1cxx_compilervs2015dp_variantcpufloat_preclowpython3.6:
+        CONFIG: win_c_compilervs2015cudatoolkit10.1cxx_compilervs2015dp_variantcpufloat_preclowpython3.6
+        CONDA_BLD_PATH: D:\\bld\\
+        UPLOAD_PACKAGES: True
+      win_c_compilervs2015cudatoolkit10.1cxx_compilervs2015dp_variantcpufloat_preclowpython3.7:
+        CONFIG: win_c_compilervs2015cudatoolkit10.1cxx_compilervs2015dp_variantcpufloat_preclowpython3.7
+        CONDA_BLD_PATH: D:\\bld\\
+        UPLOAD_PACKAGES: True
+      win_c_compilervs2015cudatoolkit10.1cxx_compilervs2015dp_variantgpufloat_prechighpython3.6:
+        CONFIG: win_c_compilervs2015cudatoolkit10.1cxx_compilervs2015dp_variantgpufloat_prechighpython3.6
+        CONDA_BLD_PATH: D:\\bld\\
+        UPLOAD_PACKAGES: True
+      win_c_compilervs2015cudatoolkit10.1cxx_compilervs2015dp_variantgpufloat_prechighpython3.7:
+        CONFIG: win_c_compilervs2015cudatoolkit10.1cxx_compilervs2015dp_variantgpufloat_prechighpython3.7
+        CONDA_BLD_PATH: D:\\bld\\
+        UPLOAD_PACKAGES: True
+      win_c_compilervs2015cudatoolkit10.1cxx_compilervs2015dp_variantgpufloat_preclowpython3.6:
+        CONFIG: win_c_compilervs2015cudatoolkit10.1cxx_compilervs2015dp_variantgpufloat_preclowpython3.6
+        CONDA_BLD_PATH: D:\\bld\\
+        UPLOAD_PACKAGES: True
+      win_c_compilervs2015cudatoolkit10.1cxx_compilervs2015dp_variantgpufloat_preclowpython3.7:
+        CONFIG: win_c_compilervs2015cudatoolkit10.1cxx_compilervs2015dp_variantgpufloat_preclowpython3.7
+        CONDA_BLD_PATH: D:\\bld\\
+        UPLOAD_PACKAGES: True
+      win_c_compilervs2015cudatoolkit9.0cxx_compilervs2015dp_variantcpufloat_prechighpython3.6:
+        CONFIG: win_c_compilervs2015cudatoolkit9.0cxx_compilervs2015dp_variantcpufloat_prechighpython3.6
+        CONDA_BLD_PATH: D:\\bld\\
+        UPLOAD_PACKAGES: True
+      win_c_compilervs2015cudatoolkit9.0cxx_compilervs2015dp_variantcpufloat_prechighpython3.7:
+        CONFIG: win_c_compilervs2015cudatoolkit9.0cxx_compilervs2015dp_variantcpufloat_prechighpython3.7
+        CONDA_BLD_PATH: D:\\bld\\
+        UPLOAD_PACKAGES: True
+      win_c_compilervs2015cudatoolkit9.0cxx_compilervs2015dp_variantcpufloat_preclowpython3.6:
+        CONFIG: win_c_compilervs2015cudatoolkit9.0cxx_compilervs2015dp_variantcpufloat_preclowpython3.6
+        CONDA_BLD_PATH: D:\\bld\\
+        UPLOAD_PACKAGES: True
+      win_c_compilervs2015cudatoolkit9.0cxx_compilervs2015dp_variantcpufloat_preclowpython3.7:
+        CONFIG: win_c_compilervs2015cudatoolkit9.0cxx_compilervs2015dp_variantcpufloat_preclowpython3.7
+        CONDA_BLD_PATH: D:\\bld\\
+        UPLOAD_PACKAGES: True
+      win_c_compilervs2015cudatoolkit9.0cxx_compilervs2015dp_variantgpufloat_prechighpython3.6:
+        CONFIG: win_c_compilervs2015cudatoolkit9.0cxx_compilervs2015dp_variantgpufloat_prechighpython3.6
+        CONDA_BLD_PATH: D:\\bld\\
+        UPLOAD_PACKAGES: True
+      win_c_compilervs2015cudatoolkit9.0cxx_compilervs2015dp_variantgpufloat_prechighpython3.7:
+        CONFIG: win_c_compilervs2015cudatoolkit9.0cxx_compilervs2015dp_variantgpufloat_prechighpython3.7
+        CONDA_BLD_PATH: D:\\bld\\
+        UPLOAD_PACKAGES: True
+      win_c_compilervs2015cudatoolkit9.0cxx_compilervs2015dp_variantgpufloat_preclowpython3.6:
+        CONFIG: win_c_compilervs2015cudatoolkit9.0cxx_compilervs2015dp_variantgpufloat_preclowpython3.6
+        CONDA_BLD_PATH: D:\\bld\\
+        UPLOAD_PACKAGES: True
+      win_c_compilervs2015cudatoolkit9.0cxx_compilervs2015dp_variantgpufloat_preclowpython3.7:
+        CONFIG: win_c_compilervs2015cudatoolkit9.0cxx_compilervs2015dp_variantgpufloat_preclowpython3.7
+        CONDA_BLD_PATH: D:\\bld\\
+        UPLOAD_PACKAGES: True
+      win_c_compilervs2015cudatoolkit9.2cxx_compilervs2015dp_variantcpufloat_prechighpython3.6:
+        CONFIG: win_c_compilervs2015cudatoolkit9.2cxx_compilervs2015dp_variantcpufloat_prechighpython3.6
+        CONDA_BLD_PATH: D:\\bld\\
+        UPLOAD_PACKAGES: True
+      win_c_compilervs2015cudatoolkit9.2cxx_compilervs2015dp_variantcpufloat_prechighpython3.7:
+        CONFIG: win_c_compilervs2015cudatoolkit9.2cxx_compilervs2015dp_variantcpufloat_prechighpython3.7
+        CONDA_BLD_PATH: D:\\bld\\
+        UPLOAD_PACKAGES: True
+      win_c_compilervs2015cudatoolkit9.2cxx_compilervs2015dp_variantcpufloat_preclowpython3.6:
+        CONFIG: win_c_compilervs2015cudatoolkit9.2cxx_compilervs2015dp_variantcpufloat_preclowpython3.6
+        CONDA_BLD_PATH: D:\\bld\\
+        UPLOAD_PACKAGES: True
+      win_c_compilervs2015cudatoolkit9.2cxx_compilervs2015dp_variantcpufloat_preclowpython3.7:
+        CONFIG: win_c_compilervs2015cudatoolkit9.2cxx_compilervs2015dp_variantcpufloat_preclowpython3.7
+        CONDA_BLD_PATH: D:\\bld\\
+        UPLOAD_PACKAGES: True
+      win_c_compilervs2015cudatoolkit9.2cxx_compilervs2015dp_variantgpufloat_prechighpython3.6:
+        CONFIG: win_c_compilervs2015cudatoolkit9.2cxx_compilervs2015dp_variantgpufloat_prechighpython3.6
+        CONDA_BLD_PATH: D:\\bld\\
+        UPLOAD_PACKAGES: True
+      win_c_compilervs2015cudatoolkit9.2cxx_compilervs2015dp_variantgpufloat_prechighpython3.7:
+        CONFIG: win_c_compilervs2015cudatoolkit9.2cxx_compilervs2015dp_variantgpufloat_prechighpython3.7
+        CONDA_BLD_PATH: D:\\bld\\
+        UPLOAD_PACKAGES: True
+      win_c_compilervs2015cudatoolkit9.2cxx_compilervs2015dp_variantgpufloat_preclowpython3.6:
+        CONFIG: win_c_compilervs2015cudatoolkit9.2cxx_compilervs2015dp_variantgpufloat_preclowpython3.6
+        CONDA_BLD_PATH: D:\\bld\\
+        UPLOAD_PACKAGES: True
+      win_c_compilervs2015cudatoolkit9.2cxx_compilervs2015dp_variantgpufloat_preclowpython3.7:
+        CONFIG: win_c_compilervs2015cudatoolkit9.2cxx_compilervs2015dp_variantgpufloat_preclowpython3.7
         CONDA_BLD_PATH: D:\\bld\\
         UPLOAD_PACKAGES: True
   steps:

@@ -10,36 +10,132 @@ jobs:
   strategy:
     maxParallel: 8
     matrix:
-      linux_dp_variantcpufloat_prechighpython3.6:
-        CONFIG: linux_dp_variantcpufloat_prechighpython3.6
+      linux_cudatoolkit10.0dp_variantcpufloat_prechighpython3.6:
+        CONFIG: linux_cudatoolkit10.0dp_variantcpufloat_prechighpython3.6
         UPLOAD_PACKAGES: True
         DOCKER_IMAGE: condaforge/linux-anvil-comp7
-      linux_dp_variantcpufloat_prechighpython3.7:
-        CONFIG: linux_dp_variantcpufloat_prechighpython3.7
+      linux_cudatoolkit10.0dp_variantcpufloat_prechighpython3.7:
+        CONFIG: linux_cudatoolkit10.0dp_variantcpufloat_prechighpython3.7
         UPLOAD_PACKAGES: True
         DOCKER_IMAGE: condaforge/linux-anvil-comp7
-      linux_dp_variantcpufloat_preclowpython3.6:
-        CONFIG: linux_dp_variantcpufloat_preclowpython3.6
+      linux_cudatoolkit10.0dp_variantcpufloat_preclowpython3.6:
+        CONFIG: linux_cudatoolkit10.0dp_variantcpufloat_preclowpython3.6
         UPLOAD_PACKAGES: True
         DOCKER_IMAGE: condaforge/linux-anvil-comp7
-      linux_dp_variantcpufloat_preclowpython3.7:
-        CONFIG: linux_dp_variantcpufloat_preclowpython3.7
+      linux_cudatoolkit10.0dp_variantcpufloat_preclowpython3.7:
+        CONFIG: linux_cudatoolkit10.0dp_variantcpufloat_preclowpython3.7
         UPLOAD_PACKAGES: True
         DOCKER_IMAGE: condaforge/linux-anvil-comp7
-      linux_dp_variantgpufloat_prechighpython3.6:
-        CONFIG: linux_dp_variantgpufloat_prechighpython3.6
+      linux_cudatoolkit10.0dp_variantgpufloat_prechighpython3.6:
+        CONFIG: linux_cudatoolkit10.0dp_variantgpufloat_prechighpython3.6
         UPLOAD_PACKAGES: True
         DOCKER_IMAGE: condaforge/linux-anvil-comp7
-      linux_dp_variantgpufloat_prechighpython3.7:
-        CONFIG: linux_dp_variantgpufloat_prechighpython3.7
+      linux_cudatoolkit10.0dp_variantgpufloat_prechighpython3.7:
+        CONFIG: linux_cudatoolkit10.0dp_variantgpufloat_prechighpython3.7
         UPLOAD_PACKAGES: True
         DOCKER_IMAGE: condaforge/linux-anvil-comp7
-      linux_dp_variantgpufloat_preclowpython3.6:
-        CONFIG: linux_dp_variantgpufloat_preclowpython3.6
+      linux_cudatoolkit10.0dp_variantgpufloat_preclowpython3.6:
+        CONFIG: linux_cudatoolkit10.0dp_variantgpufloat_preclowpython3.6
         UPLOAD_PACKAGES: True
         DOCKER_IMAGE: condaforge/linux-anvil-comp7
-      linux_dp_variantgpufloat_preclowpython3.7:
-        CONFIG: linux_dp_variantgpufloat_preclowpython3.7
+      linux_cudatoolkit10.0dp_variantgpufloat_preclowpython3.7:
+        CONFIG: linux_cudatoolkit10.0dp_variantgpufloat_preclowpython3.7
+        UPLOAD_PACKAGES: True
+        DOCKER_IMAGE: condaforge/linux-anvil-comp7
+      linux_cudatoolkit10.1dp_variantcpufloat_prechighpython3.6:
+        CONFIG: linux_cudatoolkit10.1dp_variantcpufloat_prechighpython3.6
+        UPLOAD_PACKAGES: True
+        DOCKER_IMAGE: condaforge/linux-anvil-comp7
+      linux_cudatoolkit10.1dp_variantcpufloat_prechighpython3.7:
+        CONFIG: linux_cudatoolkit10.1dp_variantcpufloat_prechighpython3.7
+        UPLOAD_PACKAGES: True
+        DOCKER_IMAGE: condaforge/linux-anvil-comp7
+      linux_cudatoolkit10.1dp_variantcpufloat_preclowpython3.6:
+        CONFIG: linux_cudatoolkit10.1dp_variantcpufloat_preclowpython3.6
+        UPLOAD_PACKAGES: True
+        DOCKER_IMAGE: condaforge/linux-anvil-comp7
+      linux_cudatoolkit10.1dp_variantcpufloat_preclowpython3.7:
+        CONFIG: linux_cudatoolkit10.1dp_variantcpufloat_preclowpython3.7
+        UPLOAD_PACKAGES: True
+        DOCKER_IMAGE: condaforge/linux-anvil-comp7
+      linux_cudatoolkit10.1dp_variantgpufloat_prechighpython3.6:
+        CONFIG: linux_cudatoolkit10.1dp_variantgpufloat_prechighpython3.6
+        UPLOAD_PACKAGES: True
+        DOCKER_IMAGE: condaforge/linux-anvil-comp7
+      linux_cudatoolkit10.1dp_variantgpufloat_prechighpython3.7:
+        CONFIG: linux_cudatoolkit10.1dp_variantgpufloat_prechighpython3.7
+        UPLOAD_PACKAGES: True
+        DOCKER_IMAGE: condaforge/linux-anvil-comp7
+      linux_cudatoolkit10.1dp_variantgpufloat_preclowpython3.6:
+        CONFIG: linux_cudatoolkit10.1dp_variantgpufloat_preclowpython3.6
+        UPLOAD_PACKAGES: True
+        DOCKER_IMAGE: condaforge/linux-anvil-comp7
+      linux_cudatoolkit10.1dp_variantgpufloat_preclowpython3.7:
+        CONFIG: linux_cudatoolkit10.1dp_variantgpufloat_preclowpython3.7
+        UPLOAD_PACKAGES: True
+        DOCKER_IMAGE: condaforge/linux-anvil-comp7
+      linux_cudatoolkit9.0dp_variantcpufloat_prechighpython3.6:
+        CONFIG: linux_cudatoolkit9.0dp_variantcpufloat_prechighpython3.6
+        UPLOAD_PACKAGES: True
+        DOCKER_IMAGE: condaforge/linux-anvil-comp7
+      linux_cudatoolkit9.0dp_variantcpufloat_prechighpython3.7:
+        CONFIG: linux_cudatoolkit9.0dp_variantcpufloat_prechighpython3.7
+        UPLOAD_PACKAGES: True
+        DOCKER_IMAGE: condaforge/linux-anvil-comp7
+      linux_cudatoolkit9.0dp_variantcpufloat_preclowpython3.6:
+        CONFIG: linux_cudatoolkit9.0dp_variantcpufloat_preclowpython3.6
+        UPLOAD_PACKAGES: True
+        DOCKER_IMAGE: condaforge/linux-anvil-comp7
+      linux_cudatoolkit9.0dp_variantcpufloat_preclowpython3.7:
+        CONFIG: linux_cudatoolkit9.0dp_variantcpufloat_preclowpython3.7
+        UPLOAD_PACKAGES: True
+        DOCKER_IMAGE: condaforge/linux-anvil-comp7
+      linux_cudatoolkit9.0dp_variantgpufloat_prechighpython3.6:
+        CONFIG: linux_cudatoolkit9.0dp_variantgpufloat_prechighpython3.6
+        UPLOAD_PACKAGES: True
+        DOCKER_IMAGE: condaforge/linux-anvil-comp7
+      linux_cudatoolkit9.0dp_variantgpufloat_prechighpython3.7:
+        CONFIG: linux_cudatoolkit9.0dp_variantgpufloat_prechighpython3.7
+        UPLOAD_PACKAGES: True
+        DOCKER_IMAGE: condaforge/linux-anvil-comp7
+      linux_cudatoolkit9.0dp_variantgpufloat_preclowpython3.6:
+        CONFIG: linux_cudatoolkit9.0dp_variantgpufloat_preclowpython3.6
+        UPLOAD_PACKAGES: True
+        DOCKER_IMAGE: condaforge/linux-anvil-comp7
+      linux_cudatoolkit9.0dp_variantgpufloat_preclowpython3.7:
+        CONFIG: linux_cudatoolkit9.0dp_variantgpufloat_preclowpython3.7
+        UPLOAD_PACKAGES: True
+        DOCKER_IMAGE: condaforge/linux-anvil-comp7
+      linux_cudatoolkit9.2dp_variantcpufloat_prechighpython3.6:
+        CONFIG: linux_cudatoolkit9.2dp_variantcpufloat_prechighpython3.6
+        UPLOAD_PACKAGES: True
+        DOCKER_IMAGE: condaforge/linux-anvil-comp7
+      linux_cudatoolkit9.2dp_variantcpufloat_prechighpython3.7:
+        CONFIG: linux_cudatoolkit9.2dp_variantcpufloat_prechighpython3.7
+        UPLOAD_PACKAGES: True
+        DOCKER_IMAGE: condaforge/linux-anvil-comp7
+      linux_cudatoolkit9.2dp_variantcpufloat_preclowpython3.6:
+        CONFIG: linux_cudatoolkit9.2dp_variantcpufloat_preclowpython3.6
+        UPLOAD_PACKAGES: True
+        DOCKER_IMAGE: condaforge/linux-anvil-comp7
+      linux_cudatoolkit9.2dp_variantcpufloat_preclowpython3.7:
+        CONFIG: linux_cudatoolkit9.2dp_variantcpufloat_preclowpython3.7
+        UPLOAD_PACKAGES: True
+        DOCKER_IMAGE: condaforge/linux-anvil-comp7
+      linux_cudatoolkit9.2dp_variantgpufloat_prechighpython3.6:
+        CONFIG: linux_cudatoolkit9.2dp_variantgpufloat_prechighpython3.6
+        UPLOAD_PACKAGES: True
+        DOCKER_IMAGE: condaforge/linux-anvil-comp7
+      linux_cudatoolkit9.2dp_variantgpufloat_prechighpython3.7:
+        CONFIG: linux_cudatoolkit9.2dp_variantgpufloat_prechighpython3.7
+        UPLOAD_PACKAGES: True
+        DOCKER_IMAGE: condaforge/linux-anvil-comp7
+      linux_cudatoolkit9.2dp_variantgpufloat_preclowpython3.6:
+        CONFIG: linux_cudatoolkit9.2dp_variantgpufloat_preclowpython3.6
+        UPLOAD_PACKAGES: True
+        DOCKER_IMAGE: condaforge/linux-anvil-comp7
+      linux_cudatoolkit9.2dp_variantgpufloat_preclowpython3.7:
+        CONFIG: linux_cudatoolkit9.2dp_variantgpufloat_preclowpython3.7
         UPLOAD_PACKAGES: True
         DOCKER_IMAGE: condaforge/linux-anvil-comp7
   steps:
