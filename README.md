@@ -84,38 +84,16 @@ Current build status
                   <img src="https://dev.azure.com/deepmd-kit-recipes/feedstock-builds/_apis/build/status/deepmd-kit-feedstock?branchName=master&jobName=linux&configuration=linux_dp_variantgpufloat_preclowpython3.7" alt="variant">
                 </a>
               </td>
-            </tr><tr>
-              <td>osx_dp_variantcpufloat_prechighpython3.6</td>
-              <td>
-                <a href="https://dev.azure.com/deepmd-kit-recipes/feedstock-builds/_build/latest?definitionId=1&branchName=master">
-                  <img src="https://dev.azure.com/deepmd-kit-recipes/feedstock-builds/_apis/build/status/deepmd-kit-feedstock?branchName=master&jobName=osx&configuration=osx_dp_variantcpufloat_prechighpython3.6" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_dp_variantcpufloat_prechighpython3.7</td>
-              <td>
-                <a href="https://dev.azure.com/deepmd-kit-recipes/feedstock-builds/_build/latest?definitionId=1&branchName=master">
-                  <img src="https://dev.azure.com/deepmd-kit-recipes/feedstock-builds/_apis/build/status/deepmd-kit-feedstock?branchName=master&jobName=osx&configuration=osx_dp_variantcpufloat_prechighpython3.7" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_dp_variantcpufloat_preclowpython3.6</td>
-              <td>
-                <a href="https://dev.azure.com/deepmd-kit-recipes/feedstock-builds/_build/latest?definitionId=1&branchName=master">
-                  <img src="https://dev.azure.com/deepmd-kit-recipes/feedstock-builds/_apis/build/status/deepmd-kit-feedstock?branchName=master&jobName=osx&configuration=osx_dp_variantcpufloat_preclowpython3.6" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_dp_variantcpufloat_preclowpython3.7</td>
-              <td>
-                <a href="https://dev.azure.com/deepmd-kit-recipes/feedstock-builds/_build/latest?definitionId=1&branchName=master">
-                  <img src="https://dev.azure.com/deepmd-kit-recipes/feedstock-builds/_apis/build/status/deepmd-kit-feedstock?branchName=master&jobName=osx&configuration=osx_dp_variantcpufloat_preclowpython3.7" alt="variant">
-                </a>
-              </td>
             </tr>
           </tbody>
         </table>
       </details>
+    </td>
+  </tr>
+  <tr>
+    <td>OSX</td>
+    <td>
+      <img src="https://img.shields.io/badge/OSX-disabled-lightgrey.svg" alt="OSX disabled">
     </td>
   </tr>
   <tr>
