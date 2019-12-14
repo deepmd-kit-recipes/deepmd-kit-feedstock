@@ -1,0 +1,24 @@
+MACOSX_DEPLOYMENT_TARGET:
+- '10.9'
+c_compiler:
+- clang
+c_compiler_version:
+- '9'
+channel_sources:
+- deepmodeling,defaults
+channel_targets:
+- deepmodeling main
+cxx_compiler:
+- clangxx
+cxx_compiler_version:
+- '9'
+dp_variant:
+- gpu
+float_prec:
+- high
+macos_machine:
+- x86_64-apple-darwin13.4.0
+macos_min_version:
+- '10.9'
+numpy:
+- '1.14'
