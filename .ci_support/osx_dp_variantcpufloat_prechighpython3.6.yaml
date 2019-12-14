@@ -1,17 +1,9 @@
 MACOSX_DEPLOYMENT_TARGET:
 - '10.9'
-c_compiler:
-- clang
-c_compiler_version:
-- '4'
 channel_sources:
 - deepmodeling,defaults
 channel_targets:
 - deepmodeling main
-cxx_compiler:
-- clangxx
-cxx_compiler_version:
-- '4'
 dp_variant:
 - cpu
 float_prec:
