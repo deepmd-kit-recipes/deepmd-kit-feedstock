@@ -24,6 +24,7 @@ build:
     - "pip install . --no-deps -vv"  # [win]
   skip: true  # [py<35]
   skip: true  # [osx and dp_variant == 'gpu']
+  skip: true  # [win]
 
 requirements:
   build:
