@@ -1,1 +1,9 @@
-[]
+appveyor:
+  secure:
+    BINSTAR_TOKEN: +Hbd0iE86bSYV3CLG1jtSfPeH6NZsLlppZxPpON+etrZMnP1boqGfGGbOYP+HyGa
+github:
+  user_or_org: deepmd-kit-recipes
+channels:
+  targets:
+    -
+      - deepmodeling

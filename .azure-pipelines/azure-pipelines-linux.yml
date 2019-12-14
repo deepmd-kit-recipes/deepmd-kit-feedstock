@@ -10,20 +10,36 @@ jobs:
   strategy:
     maxParallel: 8
     matrix:
-      linux_dp_variantcpufloat_prechigh:
-        CONFIG: linux_dp_variantcpufloat_prechigh
+      linux_dp_variantcpufloat_prechighpython3.6:
+        CONFIG: linux_dp_variantcpufloat_prechighpython3.6
         UPLOAD_PACKAGES: True
         DOCKER_IMAGE: condaforge/linux-anvil-comp7
-      linux_dp_variantcpufloat_preclow:
-        CONFIG: linux_dp_variantcpufloat_preclow
+      linux_dp_variantcpufloat_prechighpython3.7:
+        CONFIG: linux_dp_variantcpufloat_prechighpython3.7
         UPLOAD_PACKAGES: True
         DOCKER_IMAGE: condaforge/linux-anvil-comp7
-      linux_dp_variantgpufloat_prechigh:
-        CONFIG: linux_dp_variantgpufloat_prechigh
+      linux_dp_variantcpufloat_preclowpython3.6:
+        CONFIG: linux_dp_variantcpufloat_preclowpython3.6
         UPLOAD_PACKAGES: True
         DOCKER_IMAGE: condaforge/linux-anvil-comp7
-      linux_dp_variantgpufloat_preclow:
-        CONFIG: linux_dp_variantgpufloat_preclow
+      linux_dp_variantcpufloat_preclowpython3.7:
+        CONFIG: linux_dp_variantcpufloat_preclowpython3.7
+        UPLOAD_PACKAGES: True
+        DOCKER_IMAGE: condaforge/linux-anvil-comp7
+      linux_dp_variantgpufloat_prechighpython3.6:
+        CONFIG: linux_dp_variantgpufloat_prechighpython3.6
+        UPLOAD_PACKAGES: True
+        DOCKER_IMAGE: condaforge/linux-anvil-comp7
+      linux_dp_variantgpufloat_prechighpython3.7:
+        CONFIG: linux_dp_variantgpufloat_prechighpython3.7
+        UPLOAD_PACKAGES: True
+        DOCKER_IMAGE: condaforge/linux-anvil-comp7
+      linux_dp_variantgpufloat_preclowpython3.6:
+        CONFIG: linux_dp_variantgpufloat_preclowpython3.6
+        UPLOAD_PACKAGES: True
+        DOCKER_IMAGE: condaforge/linux-anvil-comp7
+      linux_dp_variantgpufloat_preclowpython3.7:
+        CONFIG: linux_dp_variantgpufloat_preclowpython3.7
         UPLOAD_PACKAGES: True
         DOCKER_IMAGE: condaforge/linux-anvil-comp7
   steps:
