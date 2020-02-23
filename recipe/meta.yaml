@@ -36,10 +36,10 @@ requirements:
   host:
     - python
     - pip
-    - numpy >=1.13.3,<2.0a0
+    - numpy
     - setuptools_scm
-    - tensorflow {{ tf_version }}  # [dp_variant != 'gpu']
-    - tensorflow-gpu {{ tf_version }}  # [dp_variant == 'gpu']
+    - tensorflow {{ tf_version }}*  # [dp_variant != 'gpu']
+    - tensorflow-gpu {{ tf_version }}*  # [dp_variant == 'gpu']
     - cudatoolkit {{ cudatoolkit }}*  # [dp_variant == 'gpu']
     - setuptools_scm
     - scikit-build
