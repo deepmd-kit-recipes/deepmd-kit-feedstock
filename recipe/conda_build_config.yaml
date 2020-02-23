@@ -16,3 +16,5 @@ cudatoolkit:
 - 10.1
 tf_version:
 - 2.1
+numpy:
+- 1.18
