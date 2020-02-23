@@ -41,7 +41,6 @@ requirements:
     - tensorflow {{ tf_version }}*  # [dp_variant != 'gpu']
     - tensorflow-gpu {{ tf_version }}*  # [dp_variant == 'gpu']
     - cudatoolkit {{ cudatoolkit }}*  # [dp_variant == 'gpu']
-    - setuptools_scm
     - scikit-build
     - m2r
 
