@@ -15,6 +15,6 @@ cxx_compiler_version:
 cudatoolkit:
 - 10.1
 tf_version:
-- 2.1
+- 2.2
 numpy:
 - 1.18
