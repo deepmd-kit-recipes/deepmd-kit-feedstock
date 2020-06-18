@@ -13,7 +13,8 @@ c_compiler_version:
 cxx_compiler_version:
 - 4  # [osx]
 cudatoolkit:
-- 10.0
+- 10.1
+tf_version:
+- 2.1
 numpy:
-- 1.17
-
+- 1.18
