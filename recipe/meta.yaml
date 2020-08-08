@@ -32,8 +32,8 @@ source:
 
 build:
   number: 2
-  string: "py{{ py }}_{{ PKG_BUILDNUM }}_{{ dp_variant }}"  # [float_prec == 'high']
-  string: "py{{ py }}_{{ PKG_BUILDNUM }}_{{ dp_variant }}_{{float_prec}}"  # [float_prec != 'high']
+  string: "py{{ py }}_{{ PKG_BUILDNUM }}_cuda{{ cuda_compiler_version }}_{{ dp_variant }}"  # [float_prec == 'high']
+  string: "py{{ py }}_{{ PKG_BUILDNUM }}_cuda{{ cuda_compiler_version }}_{{ dp_variant }}_{{float_prec}}"  # [float_prec != 'high']
   script:
     - "SETUPTOOLS_SCM_PRETEND_VERSION={{ version }} {{ PYTHON }} -m pip install . -vv"  # [unix]
     - "set SETUPTOOLS_SCM_PRETEND_VERSION=%PKG_VERSION%"  # [win]
