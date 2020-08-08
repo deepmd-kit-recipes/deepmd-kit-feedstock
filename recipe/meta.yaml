@@ -2,6 +2,23 @@
 {% set version = "1.2.0" %}
 {% set py = environ.get('CONDA_PY', '') %}
 
+{% if cuda_compiler_version == "None" %}
+{% set dp_variant = "cpu" %}
+{% set tf_version = "2.2" %}
+
+{% else %}
+{% set dp_variant = "gpu" %}
+
+{% if cuda_compiler_version == "10.1" %}
+{% set tf_version = "2.2" %}
+{% elif cuda_compiler_version == "10.0" %}
+{% set tf_version = "2.0" %}
+{% else %}
+{% set tf_version = "1.14" %}
+{% endif %}
+
+{% endif %}
+
 package:
   name: {{ name|lower }}
   version: {{ version }}
@@ -14,16 +31,17 @@ source:
   - osx.patch  # [osx]
 
 build:
-  number: 1
-  string: "py{{ py }}_{{ PKG_BUILDNUM }}_{{ dp_variant }}"  # [float_prec == 'high']
-  string: "py{{ py }}_{{ PKG_BUILDNUM }}_{{ dp_variant }}_{{float_prec}}"  # [float_prec != 'high']
+  number: 2
+  string: "py{{ py }}_{{ PKG_BUILDNUM }}_cuda{{ cuda_compiler_version }}_{{ dp_variant }}"  # [float_prec == 'high']
+  string: "py{{ py }}_{{ PKG_BUILDNUM }}_cuda{{ cuda_compiler_version }}_{{ dp_variant }}_{{float_prec}}"  # [float_prec != 'high']
   script:
     - "SETUPTOOLS_SCM_PRETEND_VERSION={{ version }} {{ PYTHON }} -m pip install . -vv"  # [unix]
     - "set SETUPTOOLS_SCM_PRETEND_VERSION=%PKG_VERSION%"  # [win]
     - "pip install . --no-deps -vv"  # [win]
-  skip: true  # [py<35]
-  skip: true  # [osx and dp_variant == 'gpu']
+  skip: true  # [osx and cuda_compiler_version != 'None']
   skip: true  # [not linux]
+  skip: true  # [py==38 and cuda_compiler_version == '9.2' ]
+  skip: true  # [py==38 and cuda_compiler_version == '10.0' ]
 
 requirements:
   build:
@@ -38,9 +56,9 @@ requirements:
     - pip
     - numpy
     - setuptools_scm
-    - tensorflow {{ tf_version }}*  # [dp_variant != 'gpu']
-    - tensorflow-gpu {{ tf_version }}*  # [dp_variant == 'gpu']
-    - cudatoolkit {{ cudatoolkit }}*  # [dp_variant == 'gpu']
+    - tensorflow {{ tf_version }}*  # [cuda_compiler_version == 'None']
+    - tensorflow-gpu {{ tf_version }}*  # [cuda_compiler_version != 'None']
+    - cudatoolkit {{ cuda_compiler_version }}*  # [cuda_compiler_version != 'None']
     - scikit-build
     - m2r
 
@@ -48,9 +66,9 @@ requirements:
     - python
     - numpy
     - scipy
-    - {{ pin_compatible('tensorflow', max_pin='x.x') }}  # [dp_variant != 'gpu']
-    - {{ pin_compatible('tensorflow-gpu', max_pin='x.x') }}  # [dp_variant == 'gpu']
-    - {{ pin_compatible('cudatoolkit', max_pin='x.x') }}*  # [dp_variant == 'gpu']
+    - {{ pin_compatible('tensorflow', max_pin='x.x') }}  # [cuda_compiler_version == 'None']
+    - {{ pin_compatible('tensorflow-gpu', max_pin='x.x') }}  # [cuda_compiler_version != 'None']
+    - {{ pin_compatible('cudatoolkit', max_pin='x.x') }}*  # [cuda_compiler_version != 'None']
 
 test:
   imports:
