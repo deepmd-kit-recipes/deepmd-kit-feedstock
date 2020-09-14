@@ -6,8 +6,10 @@ channel_sources:
 channel_targets:
 - deepmodeling main
 c_compiler_version:
+- 5.4  # [linux]
 - 4  # [osx]
 cxx_compiler_version:
+- 5.4  # [linux]
 - 4  # [osx]
 numpy:
 - 1.18
