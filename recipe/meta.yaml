@@ -61,6 +61,8 @@ requirements:
     - cudatoolkit {{ cuda_compiler_version }}*  # [cuda_compiler_version != 'None']
     - scikit-build
     - m2r
+    - dargs
+    - pyyaml
 
   run:
     - python
@@ -69,6 +71,8 @@ requirements:
     - {{ pin_compatible('tensorflow', max_pin='x.x') }}  # [cuda_compiler_version == 'None']
     - {{ pin_compatible('tensorflow-gpu', max_pin='x.x') }}  # [cuda_compiler_version != 'None']
     - {{ pin_compatible('cudatoolkit', max_pin='x.x') }}*  # [cuda_compiler_version != 'None']
+    - dargs
+    - pyyaml
 
 test:
   imports:
