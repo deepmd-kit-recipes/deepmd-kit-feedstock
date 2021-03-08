@@ -27,6 +27,9 @@ zip_keys:
     - cuda_compiler_version
     - docker_image
     - cdt_name
+  - - python
+    - python_impl
+    - numpy
 c_compiler_version:
 - 5.4
 cxx_compiler_version:
@@ -36,6 +39,14 @@ channel_sources:
 channel_targets:
 - deepmodeling main
 python:
-- 3.7
-- 3.8
-- 3.9
+- 3.7.*
+- 3.8.*
+- 3.9.*
+python_impl:
+- cpython
+- cpython
+- cpython
+numpy:
+- 1.16
+- 1.16
+- 1.16
