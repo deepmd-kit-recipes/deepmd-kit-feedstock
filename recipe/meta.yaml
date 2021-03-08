@@ -40,8 +40,8 @@ build:
     - "pip install . --no-deps -vv"  # [win]
   skip: true  # [osx and cuda_compiler_version != 'None']
   skip: true  # [not linux]
-  skip: true  # [py==38 and cuda_compiler_version == '9.2' ]
-  skip: true  # [py==38 and cuda_compiler_version == '10.0' ]
+  skip: true  # [py>=38 and cuda_compiler_version == '9.2' ]
+  skip: true  # [py>=38 and cuda_compiler_version == '10.0' ]
 
 requirements:
   build:
