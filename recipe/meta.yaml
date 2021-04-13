@@ -63,6 +63,8 @@ requirements:
     - m2r
     - dargs
     - pyyaml
+    - tqdm
+    - typing_extensions
 
   run:
     - python
@@ -73,6 +75,8 @@ requirements:
     - {{ pin_compatible('cudatoolkit', max_pin='x.x') }}*  # [cuda_compiler_version != 'None']
     - dargs
     - pyyaml
+    - tqdm
+    - typing_extensions
 
 test:
   imports:
