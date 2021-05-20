@@ -1,5 +1,5 @@
 {% set name = "deepmd-kit" %}
-{% set version = "2.0.0.a1" %}
+{% set version = "2.0.0.b0" %}
 {% set py = environ.get('CONDA_PY', '') %}
 
 {% if cuda_compiler_version == "None" %}
@@ -35,8 +35,7 @@ build:
   string: "py{{ py }}_{{ PKG_BUILDNUM }}_cuda{{ cuda_compiler_version }}_{{ dp_variant }}"  # [float_prec == 'high']
   string: "py{{ py }}_{{ PKG_BUILDNUM }}_cuda{{ cuda_compiler_version }}_{{ dp_variant }}_{{float_prec}}"  # [float_prec != 'high']
   script:
-    - "SETUPTOOLS_SCM_PRETEND_VERSION={{ version }} {{ PYTHON }} -m pip install . -vv"  # [unix]
-    - "set SETUPTOOLS_SCM_PRETEND_VERSION=%PKG_VERSION%"  # [win]
+    - "{{ PYTHON }} -m pip install . -vv"  # [unix]
     - "pip install . --no-deps -vv"  # [win]
   skip: true  # [osx and cuda_compiler_version != 'None']
   skip: true  # [not linux]
