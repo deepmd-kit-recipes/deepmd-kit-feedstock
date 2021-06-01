@@ -43,7 +43,7 @@ c_compiler_version:
 cxx_compiler_version:
 - 5.4
 channel_sources:
-- deepmodeling,defaults,nvidia,https://deepmodeling.njzjz.win
+- deepmodeling,https://deepmodeling.njzjz.win,nvidia,defaults
 channel_targets:
 - deepmodeling dev
 python:
