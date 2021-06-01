@@ -73,7 +73,10 @@ requirements:
     - scipy
     - {{ pin_compatible('tensorflow', max_pin='x.x') }}  # [cuda_compiler_version == 'None']
     - {{ pin_compatible('tensorflow-gpu', max_pin='x.x') }}  # [cuda_compiler_version != 'None' and cuda_compiler_version != '11.0' and cuda_compiler_version != '11.1']
-    - tensorflow-gpu {{ tf_version }}* # [cuda_compiler_version == '11.0' or cuda_compiler_version=='11.1']
+    - {{ pin_compatible('tensorflow-base', max_pin='x.x') }} # [cuda_compiler_version == '11.0' or cuda_compiler_version=='11.1']
+    - tensorboard >= {{ tf_version }} # [cuda_compiler_version == '11.0' or cuda_compiler_version=='11.1']
+    - tensorflow-estimator >= {{ tf_version }} # [cuda_compiler_version == '11.0' or cuda_compiler_version=='11.1']
+    - _tflow_select 2.1.0 gpu # [cuda_compiler_version == '11.0' or cuda_compiler_version=='11.1']
     - {{ pin_compatible('cudatoolkit', max_pin='x.x') }}*  # [cuda_compiler_version != 'None']
     - dargs
     - pyyaml
