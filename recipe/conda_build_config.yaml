@@ -39,9 +39,9 @@ zip_keys:
     - python_impl
     - numpy
 c_compiler_version:
-- 5.4
+- 7.3
 cxx_compiler_version:
-- 5.4
+- 7.3
 channel_sources:
 - deepmodeling,defaults,nvidia,https://deepmodeling.njzjz.win
 channel_targets:
