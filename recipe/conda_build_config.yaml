@@ -55,6 +55,6 @@ python_impl:
 - cpython
 - cpython
 numpy:
-- 1.16
-- 1.16
-- 1.16
+- 1.20
+- 1.20
+- 1.20
