@@ -53,7 +53,8 @@ requirements:
   host:
     - python
     - pip
-    - numpy
+    - numpy # [cuda_compiler_version != '11.0' and cuda_compiler_version != '11.1' ]
+    - numpy 1.20.* # [cuda_compiler_version == '11.0' or cuda_compiler_version == '11.1' ]
     - setuptools_scm
     - tensorflow {{ tf_version }}*  # [cuda_compiler_version == 'None']
     - tensorflow-gpu {{ tf_version }}*  # [cuda_compiler_version != 'None']
