@@ -5,7 +5,7 @@ c_compiler_version:
 cdt_name:
 - cos6
 channel_sources:
-- deepmodeling,defaults
+- deepmodeling,defaults,nvidia,https://deepmodeling.njzjz.win
 channel_targets:
 - deepmodeling dev
 cuda_compiler:

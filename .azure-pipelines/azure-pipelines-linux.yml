@@ -56,6 +56,54 @@ jobs:
         CONFIG: linux_64_cuda_compiler_version10.1float_preclowpython3.9._
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cuda:10.1
+      linux_64_cuda_compiler_version11.0float_prechighpython3.7._:
+        CONFIG: linux_64_cuda_compiler_version11.0float_prechighpython3.7._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cuda:11.0
+      linux_64_cuda_compiler_version11.0float_prechighpython3.8._:
+        CONFIG: linux_64_cuda_compiler_version11.0float_prechighpython3.8._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cuda:11.0
+      linux_64_cuda_compiler_version11.0float_prechighpython3.9._:
+        CONFIG: linux_64_cuda_compiler_version11.0float_prechighpython3.9._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cuda:11.0
+      linux_64_cuda_compiler_version11.0float_preclowpython3.7._:
+        CONFIG: linux_64_cuda_compiler_version11.0float_preclowpython3.7._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cuda:11.0
+      linux_64_cuda_compiler_version11.0float_preclowpython3.8._:
+        CONFIG: linux_64_cuda_compiler_version11.0float_preclowpython3.8._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cuda:11.0
+      linux_64_cuda_compiler_version11.0float_preclowpython3.9._:
+        CONFIG: linux_64_cuda_compiler_version11.0float_preclowpython3.9._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cuda:11.0
+      linux_64_cuda_compiler_version11.1float_prechighpython3.7._:
+        CONFIG: linux_64_cuda_compiler_version11.1float_prechighpython3.7._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cuda:11.1
+      linux_64_cuda_compiler_version11.1float_prechighpython3.8._:
+        CONFIG: linux_64_cuda_compiler_version11.1float_prechighpython3.8._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cuda:11.1
+      linux_64_cuda_compiler_version11.1float_prechighpython3.9._:
+        CONFIG: linux_64_cuda_compiler_version11.1float_prechighpython3.9._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cuda:11.1
+      linux_64_cuda_compiler_version11.1float_preclowpython3.7._:
+        CONFIG: linux_64_cuda_compiler_version11.1float_preclowpython3.7._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cuda:11.1
+      linux_64_cuda_compiler_version11.1float_preclowpython3.8._:
+        CONFIG: linux_64_cuda_compiler_version11.1float_preclowpython3.8._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cuda:11.1
+      linux_64_cuda_compiler_version11.1float_preclowpython3.9._:
+        CONFIG: linux_64_cuda_compiler_version11.1float_preclowpython3.9._
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cuda:11.1
       linux_64_cuda_compiler_version9.2float_prechighpython3.7._:
         CONFIG: linux_64_cuda_compiler_version9.2float_prechighpython3.7._
         UPLOAD_PACKAGES: 'True'
