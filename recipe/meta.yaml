@@ -9,12 +9,12 @@
 {% else %}
 {% set dp_variant = "gpu" %}
 
-{% if cuda_compiler_version == "10.1" %}
-{% set tf_version = "2.4.1" %}
+{% if cuda_compiler_version == "9.2" %}
+{% set tf_version = "1.14" %}
 {% elif cuda_compiler_version == "10.0" %}
 {% set tf_version = "2.0" %}
 {% else %}
-{% set tf_version = "1.14" %}
+{% set tf_version = "2.4.1" %}
 {% endif %}
 
 {% endif %}
@@ -56,7 +56,9 @@ requirements:
     - numpy
     - setuptools_scm
     - tensorflow {{ tf_version }}*  # [cuda_compiler_version == 'None']
-    - tensorflow-gpu {{ tf_version }}*  # [cuda_compiler_version != 'None']
+    - tensorflow-gpu {{ tf_version }}*  # [cuda_compiler_version != 'None' and cuda_compiler_version != '11.0' and cuda_compiler_version != '11.1']
+    - tensorflow-base {{ tf_version }}* gpu* # [cuda_compiler_version == '11.0' or cuda_compiler_version=='11.1']
+    - hdf5 1.10.6
     - cudatoolkit {{ cuda_compiler_version }}*  # [cuda_compiler_version != 'None']
     - scikit-build
     - m2r
@@ -70,7 +72,11 @@ requirements:
     - numpy
     - scipy
     - {{ pin_compatible('tensorflow', max_pin='x.x') }}  # [cuda_compiler_version == 'None']
-    - {{ pin_compatible('tensorflow-gpu', max_pin='x.x') }}  # [cuda_compiler_version != 'None']
+    - {{ pin_compatible('tensorflow-gpu', max_pin='x.x') }}  # [cuda_compiler_version != 'None' and cuda_compiler_version != '11.0' and cuda_compiler_version != '11.1']
+    - {{ pin_compatible('tensorflow-base', max_pin='x.x') }} # [cuda_compiler_version == '11.0' or cuda_compiler_version=='11.1']
+    - tensorboard >={{ tf_version }} # [cuda_compiler_version == '11.0' or cuda_compiler_version=='11.1']
+    - tensorflow-estimator >={{ tf_version }} # [cuda_compiler_version == '11.0' or cuda_compiler_version=='11.1']
+    - _tflow_select 2.1.0 gpu # [cuda_compiler_version == '11.0' or cuda_compiler_version=='11.1']
     - {{ pin_compatible('cudatoolkit', max_pin='x.x') }}*  # [cuda_compiler_version != 'None']
     - dargs
     - pyyaml
