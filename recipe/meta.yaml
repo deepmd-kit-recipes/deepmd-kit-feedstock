@@ -57,6 +57,7 @@ requirements:
     - setuptools_scm
     - tensorflow {{ tf_version }}*  # [cuda_compiler_version == 'None']
     - tensorflow-gpu {{ tf_version }}*  # [cuda_compiler_version != 'None']
+    - tensorflow-estimator {{ tf_version }}*
     - cudatoolkit {{ cuda_compiler_version }}*  # [cuda_compiler_version != 'None']
     - scikit-build
     - m2r
