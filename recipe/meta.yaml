@@ -56,7 +56,8 @@ requirements:
     - numpy
     - setuptools_scm
     - tensorflow {{ tf_version }}*  # [cuda_compiler_version == 'None']
-    - tensorflow-gpu {{ tf_version }}*  # [cuda_compiler_version != 'None']
+    - tensorflow-gpu {{ tf_version }}*  # [cuda_compiler_version != 'None' and cuda_compiler_version != '11.0' and cuda_compiler_version != '11.1']
+    - tensorflow-base {{ tf_version }}* gpu* # [cuda_compiler_version == '11.0' or cuda_compiler_version=='11.1']
     - hdf5 1.10.6
     - cudatoolkit {{ cuda_compiler_version }}*  # [cuda_compiler_version != 'None']
     - scikit-build
@@ -71,7 +72,8 @@ requirements:
     - numpy
     - scipy
     - {{ pin_compatible('tensorflow', max_pin='x.x') }}  # [cuda_compiler_version == 'None']
-    - {{ pin_compatible('tensorflow-gpu', max_pin='x.x') }}  # [cuda_compiler_version != 'None']
+    - {{ pin_compatible('tensorflow-gpu', max_pin='x.x') }}  # [cuda_compiler_version != 'None' and cuda_compiler_version != '11.0' and cuda_compiler_version != '11.1']
+    - tensorflow-gpu {{ tf_version }}* # [cuda_compiler_version == '11.0' or cuda_compiler_version=='11.1']
     - {{ pin_compatible('cudatoolkit', max_pin='x.x') }}*  # [cuda_compiler_version != 'None']
     - dargs
     - pyyaml
