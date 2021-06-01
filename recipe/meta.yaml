@@ -68,7 +68,8 @@ requirements:
 
   run:
     - python
-    - numpy
+    - numpy # [cuda_compiler_version != '11.0' and cuda_compiler_version != '11.1' ]
+    - numpy >=1.20 # [cuda_compiler_version == '11.0' or cuda_compiler_version == '11.1' ]
     - scipy
     - {{ pin_compatible('tensorflow', max_pin='x.x') }}  # [cuda_compiler_version == 'None']
     - {{ pin_compatible('tensorflow-gpu', max_pin='x.x') }}  # [cuda_compiler_version != 'None']
