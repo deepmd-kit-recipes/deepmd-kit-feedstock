@@ -1,5 +1,5 @@
 {% set name = "deepmd-kit" %}
-{% set version = "2.0.0.b0" %}
+{% set version = "2.0.0.b1" %}
 {% set py = environ.get('CONDA_PY', '') %}
 
 {% if cuda_compiler_version == "None" %}
