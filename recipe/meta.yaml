@@ -72,7 +72,7 @@ requirements:
     - {{ pin_compatible('cudatoolkit', max_pin='x.x') }}*  # [cuda_compiler_version != 'None']
     - dargs
     - pyyaml
-    - typing_extensions
+    #- typing_extensions
 
 test:
   imports:
