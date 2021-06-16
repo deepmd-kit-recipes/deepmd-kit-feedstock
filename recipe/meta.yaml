@@ -20,14 +20,14 @@ source:
   git_rev: v{{ version }}
 
 build:
-  number: 0
+  number: 1
   string: "py{{ py }}_{{ PKG_BUILDNUM }}_cuda{{ cuda_compiler_version }}_{{ dp_variant }}"  # [float_prec == 'high']
   string: "py{{ py }}_{{ PKG_BUILDNUM }}_cuda{{ cuda_compiler_version }}_{{ dp_variant }}_{{float_prec}}"  # [float_prec != 'high']
   script_env:
     - DP_VARIANT=cuda  # [cuda_compiler_version != 'None'] 
     - DP_FLOAT_PREC=low  # [float_prec != 'high']
   script:
-    - "unset CXXFLAGS"
+    - "export CXXFLAGS=${CXXFLAGS/c++17/c++11}"
     - "{{ PYTHON }} -m pip install . -vv"  # [unix]
     - "pip install . --no-deps -vv"  # [win]
   skip: true  # [osx and cuda_compiler_version != 'None']
