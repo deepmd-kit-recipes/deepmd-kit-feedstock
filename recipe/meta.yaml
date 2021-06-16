@@ -1,5 +1,5 @@
 {% set name = "deepmd-kit" %}
-{% set version = "2.0.0.b1" %}
+{% set version = "2.0.0.b2" %}
 {% set py = environ.get('CONDA_PY', '') %}
 
 {% if cuda_compiler_version == "None" %}
@@ -17,7 +17,7 @@ package:
 
 source:
   git_url: https://github.com/deepmodeling/deepmd-kit
-  git_rev: c200e9a430ec1c1058073e5ec2154d88f7295c10 #v{{ version }}
+  git_rev: v{{ version }}
 
 build:
   number: 1
@@ -27,6 +27,7 @@ build:
     - DP_VARIANT=cuda  # [cuda_compiler_version != 'None'] 
     - DP_FLOAT_PREC=low  # [float_prec != 'high']
   script:
+    - "unset CXXFLAGS"
     - "{{ PYTHON }} -m pip install . -vv"  # [unix]
     - "pip install . --no-deps -vv"  # [win]
   skip: true  # [osx and cuda_compiler_version != 'None']
