@@ -1,5 +1,5 @@
 {% set name = "deepmd-kit" %}
-{% set version = "2.0.0.b2" %}
+{% set version = "2.0.0.b3" %}
 {% set py = environ.get('CONDA_PY', '') %}
 
 {% if cuda_compiler_version == "None" %}
@@ -20,14 +20,13 @@ source:
   git_rev: v{{ version }}
 
 build:
-  number: 1
+  number: 0
   string: "py{{ py }}_{{ PKG_BUILDNUM }}_cuda{{ cuda_compiler_version }}_{{ dp_variant }}"  # [float_prec == 'high']
   string: "py{{ py }}_{{ PKG_BUILDNUM }}_cuda{{ cuda_compiler_version }}_{{ dp_variant }}_{{float_prec}}"  # [float_prec != 'high']
   script_env:
     - DP_VARIANT=cuda  # [cuda_compiler_version != 'None'] 
     - DP_FLOAT_PREC=low  # [float_prec != 'high']
   script:
-    - "export CXXFLAGS=${CXXFLAGS/c++17/c++11}"
     - "{{ PYTHON }} -m pip install . -vv"  # [unix]
     - "pip install . --no-deps -vv"  # [win]
   skip: true  # [osx and cuda_compiler_version != 'None']
@@ -57,7 +56,6 @@ requirements:
     - m2r
     - dargs
     - pyyaml
-    - typing_extensions
 
   run:
     - python
@@ -72,7 +70,6 @@ requirements:
     - {{ pin_compatible('cudatoolkit', max_pin='x.x') }}*  # [cuda_compiler_version != 'None']
     - dargs
     - pyyaml
-    #- typing_extensions
 
 test:
   imports:
