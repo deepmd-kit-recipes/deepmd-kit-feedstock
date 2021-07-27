@@ -1,5 +1,2 @@
-float_prec:
-- low
-- high
 channel_targets:
 - deepmodeling dev

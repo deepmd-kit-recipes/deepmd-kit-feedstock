@@ -11,15 +11,13 @@ channel_targets:
 cuda_compiler:
 - nvcc
 cuda_compiler_version:
-- '11.3'
+- None
 cxx_compiler:
 - gxx
 cxx_compiler_version:
 - '7'
 docker_image:
-- ghcr.io/deepmd-kit-recipes/linux-anvil-cuda:11.3
-float_prec:
-- low
+- quay.io/condaforge/linux-anvil-cos7-x86_64
 numpy:
 - '1.20'
 pin_run_as_build:
@@ -27,7 +25,7 @@ pin_run_as_build:
     min_pin: x.x
     max_pin: x.x
 python:
-- 3.8.*
+- 3.7.*
 target_platform:
 - linux-64
 zip_keys:
