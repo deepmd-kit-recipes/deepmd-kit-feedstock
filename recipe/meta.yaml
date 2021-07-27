@@ -2,13 +2,12 @@
 {% set version = "2.0.0.b3" %}
 {% set py = environ.get('CONDA_PY', '') %}
 
+{% set tf_version = "2.5.0" %}
 {% if cuda_compiler_version == "None" %}
 {% set dp_variant = "cpu" %}
-{% set tf_version = "2.5.0" %}
 
 {% else %}
 {% set dp_variant = "gpu" %}
-{% set tf_version = "2.4.1" %}
 {% endif %}
 
 package:
@@ -20,7 +19,7 @@ source:
   git_rev: v{{ version }}
 
 build:
-  number: 0
+  number: 1
   string: "py{{ py }}_{{ PKG_BUILDNUM }}_cuda{{ cuda_compiler_version }}_{{ dp_variant }}"  # [float_prec == 'high']
   string: "py{{ py }}_{{ PKG_BUILDNUM }}_cuda{{ cuda_compiler_version }}_{{ dp_variant }}_{{float_prec}}"  # [float_prec != 'high']
   script_env:
@@ -47,10 +46,8 @@ requirements:
     - pip
     - numpy
     - setuptools_scm
-    - tensorflow {{ tf_version }}*  # [cuda_compiler_version == 'None']
-    - tensorflow-gpu {{ tf_version }}*  # [cuda_compiler_version != 'None' and cuda_compiler_version != '11.0' and cuda_compiler_version != '11.1']
-    - tensorflow-base {{ tf_version }}* gpu* # [cuda_compiler_version == '11.0' or cuda_compiler_version=='11.1']
-    - hdf5 1.10.6
+    - tensorflow-base {{ tf_version }}* mkl*  # [cuda_compiler_version == 'None']
+    - tensorflow-base {{ tf_version }}* gpu* # [cuda_compiler_version != 'None']
     - cudatoolkit {{ cuda_compiler_version }}*  # [cuda_compiler_version != 'None']
     - scikit-build
     - m2r
@@ -61,12 +58,8 @@ requirements:
     - python
     - numpy
     - scipy
-    - {{ pin_compatible('tensorflow', max_pin='x.x') }}  # [cuda_compiler_version == 'None']
-    - {{ pin_compatible('tensorflow-gpu', max_pin='x.x') }}  # [cuda_compiler_version != 'None' and cuda_compiler_version != '11.0' and cuda_compiler_version != '11.1']
-    - {{ pin_compatible('tensorflow-base', max_pin='x.x') }} # [cuda_compiler_version == '11.0' or cuda_compiler_version=='11.1']
-    - tensorboard >={{ tf_version }} # [cuda_compiler_version == '11.0' or cuda_compiler_version=='11.1']
-    - tensorflow-estimator >={{ tf_version }} # [cuda_compiler_version == '11.0' or cuda_compiler_version=='11.1']
-    - _tflow_select 2.1.0 gpu # [cuda_compiler_version == '11.0' or cuda_compiler_version=='11.1']
+    - tensorflow-base {{ tf_version }}* mkl*  # [cuda_compiler_version == 'None']
+    - tensorflow-base {{ tf_version }}* gpu* # [cuda_compiler_version != 'None']
     - {{ pin_compatible('cudatoolkit', max_pin='x.x') }}*  # [cuda_compiler_version != 'None']
     - dargs
     - pyyaml
