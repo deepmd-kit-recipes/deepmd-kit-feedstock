@@ -1,11 +1,11 @@
 c_compiler:
 - gcc
 c_compiler_version:
-- '8'
+- '7'
 cdt_name:
 - cos7
 channel_sources:
-- deepmodeling,https://conda.deepmodeling.org,defaults
+- deepmodeling,https://deepmodeling.njzjz.win,defaults
 channel_targets:
 - deepmodeling dev
 cuda_compiler:
@@ -15,7 +15,7 @@ cuda_compiler_version:
 cxx_compiler:
 - gxx
 cxx_compiler_version:
-- '8'
+- '7'
 docker_image:
 - quay.io/condaforge/linux-anvil-cos7-cuda:10.1
 float_prec:
