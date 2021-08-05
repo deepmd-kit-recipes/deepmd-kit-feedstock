@@ -1,5 +1,5 @@
 {% set name = "deepmd-kit" %}
-{% set version = "2.0.0.b3" %}
+{% set version = "2.0.0.b4" %}
 {% set py = environ.get('CONDA_PY', '') %}
 
 {% set tf_version = "2.5.0" %}
@@ -27,7 +27,9 @@ build:
     - "{{ PYTHON }} -m pip install . -vv"  # [unix]
     - "pip install . --no-deps -vv"  # [win]
   skip: true  # [osx and cuda_compiler_version != 'None']
+  skip: true  # [ppc64le and cuda_compiler_version == 'None']
   skip: true  # [not linux]
+  skip: true  # [ppc64le and not py==38]
 
 requirements:
   build:
@@ -49,6 +51,7 @@ requirements:
     - m2r
     - dargs
     - pyyaml
+    - python-hostlist
 
   run:
     - python
@@ -59,6 +62,7 @@ requirements:
     - {{ pin_compatible('cudatoolkit', max_pin='x.x') }}*  # [cuda_compiler_version != 'None']
     - dargs
     - pyyaml
+    - python-hostlist
 
 test:
   imports:
