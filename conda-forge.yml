@@ -10,3 +10,4 @@ channels:
 channel_priority: flexible
 provider:
   linux_ppc64le: azure
+test_on_native_only: true
