@@ -1,5 +1,5 @@
 {% set name = "deepmd-kit" %}
-{% set version = "2.0.1" %}
+{% set version = "2.0.2" %}
 {% set py = environ.get('CONDA_PY', '') %}
 
 {% set tf_version = "2.5.0" %}
@@ -49,9 +49,11 @@ requirements:
     - cudatoolkit {{ cuda_compiler_version }}*  # [cuda_compiler_version != 'None']
     - scikit-build
     - m2r
-    - dargs
+    - dargs  >=0.2.6
     - pyyaml
-    - python-hostlist
+    - python-hostlist  >=1.21
+    - h5py
+    - wcmatch
 
   run:
     - python
@@ -60,9 +62,11 @@ requirements:
     - tensorflow-base {{ tf_version }}* mkl*  # [cuda_compiler_version == 'None']
     - tensorflow-base {{ tf_version }}* gpu* # [cuda_compiler_version != 'None']
     - {{ pin_compatible('cudatoolkit', max_pin='x.x') }}*  # [cuda_compiler_version != 'None']
-    - dargs
+    - dargs  >=0.2.6
     - pyyaml
-    - python-hostlist
+    - python-hostlist  >=1.21
+    - h5py
+    - wcmatch
 
 test:
   imports:
