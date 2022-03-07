@@ -1,5 +1,5 @@
 {% set name = "deepmd-kit" %}
-{% set version = "2.0.3" %}
+{% set version = "2.1.0" %}
 {% set py = environ.get('CONDA_PY', '') %}
 
 
@@ -20,11 +20,9 @@ package:
 source:
   git_url: https://github.com/deepmodeling/deepmd-kit
   git_rev: v{{ version }}
-  patches:
-    - 1275.patch
 
 build:
-  number: 1
+  number: 0
   string: "py{{ py }}_{{ PKG_BUILDNUM }}_cuda{{ cuda_compiler_version }}_{{ dp_variant }}"
   script_env:
     - DP_VARIANT=cuda  # [cuda_compiler_version != 'None'] 
@@ -58,6 +56,7 @@ requirements:
     - python-hostlist  >=1.21
     - h5py
     - wcmatch
+    - packaging
 
   run:
     - python
@@ -69,6 +68,7 @@ requirements:
     - python-hostlist  >=1.21
     - h5py
     - wcmatch
+    - packaging
 
 test:
   imports:
