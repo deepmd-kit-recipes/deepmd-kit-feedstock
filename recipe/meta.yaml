@@ -78,7 +78,7 @@ test:
   commands:
     - dp -h
     - dp --version
-    - pip check
+    #- pip check
 
 about:
   home: https://github.com/deepmodeling/deepmd-kit
