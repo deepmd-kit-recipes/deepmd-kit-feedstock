@@ -39,7 +39,7 @@ requirements:
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
     - {{ compiler('cuda') }}  # [cuda_compiler_version != 'None']
-    - cmake  >=3.7
+    - cmake  >=3.23
     - make  # [unix]
     - ninja
 
