@@ -1,5 +1,5 @@
 {% set name = "deepmd-kit" %}
-{% set version = "2.2.3" %}
+{% set version = "2.2.4" %}
 {% set py = environ.get('CONDA_PY', '') %}
 
 
