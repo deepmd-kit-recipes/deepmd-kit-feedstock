@@ -1,5 +1,5 @@
 {% set name = "deepmd-kit" %}
-{% set version = "2.2.4" %}
+{% set version = "2.2.5" %}
 {% set py = environ.get('CONDA_PY', '') %}
 
 
@@ -46,26 +46,18 @@ requirements:
   host:
     - python
     - pip
-    - numpy
     - setuptools_scm
     - tensorflow {{ tf_version }}.* {{ tf_variant }}*
-    - scikit-build
-    - m2r
-    - dargs  >=0.2.6
-    - pyyaml
-    - python-hostlist  >=1.21
-    - h5py
-    - wcmatch
-    - packaging
+    - scikit-build-core
 
   run:
     - python
     - numpy
     - scipy
     - tensorflow {{ tf_version }}.* {{ tf_variant }}*
-    - dargs  >=0.2.6
+    - dargs >=0.3.5
     - pyyaml
-    - python-hostlist  >=1.21
+    - python-hostlist >=1.21
     - h5py
     - wcmatch
     - packaging
