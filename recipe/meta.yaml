@@ -1,5 +1,5 @@
 {% set name = "deepmd-kit" %}
-{% set version = "2.2.8" %}
+{% set version = "2.2.9" %}
 {% set py = environ.get('CONDA_PY', '') %}
 
 
@@ -56,7 +56,7 @@ requirements:
     - numpy
     - scipy
     - tensorflow {{ tf_version }}.* {{ tf_variant }}*
-    - dargs >=0.3.5
+    - dargs >=0.4.1
     - pyyaml
     - python-hostlist >=1.21
     - h5py
